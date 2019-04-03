@@ -1,0 +1,6 @@
+package com.springboot.app.controllers;
+
+@Controller
+public class IndexController {
+
+}
