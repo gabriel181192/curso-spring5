@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlnx:th="hhtp://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Crear Cliente</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">SP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/listar}">Cliente</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<h4 th:text="${titulo}"></h4>
+
+	<div th:object="${cliente}" th:remove="tag">
+		<ul th:if="${#fields.hasErrors('*')}" class="alert alert-danger" role="alert">
+			<li th:each="err : ${#fields.errors('*')}" th:text="${err}"></li>
+		</ul>
+	</div>
+
+	<form th:action="@{/form}" th:object="${cliente}" method="post">
+		<div class="form-group row">
+			<label class="col-2 col-form-label">Nombre</label>
+			<div class="col-6">
+				<input type="text" th:field="*{nombre}" th:errorclass="'form-control alert-danger'"/>
+				<small class="form-text text-danger" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></small>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label class="col-2 col-form-label">Apellido</label>
+			<div class="col-6">
+				<input type="text" th:field="*{apellido}" th:errorclass="'form-control alert-danger'"/>
+				<small class="form-text text-danger" th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}"></small>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label class="col-2 col-form-label">Email</label>
+			<div class="col-6">
+				<input type="text" th:field="*{email}" th:errorclass="'form-control alert-danger'"/>
+				<small class="form-text text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label class="col-2 col-form-label">Fecha</label>
+			<div class="col-6">
+				<input type="text" th:field="*{createAt}" th:errorclass="'form-control alert-danger'"/>
+				<small class="form-text text-danger" th:if="${#fields.hasErrors('createAt')}" th:errors="*{createAt}"></small>
+			</div>
+		</div>
+
+		<div class="form-gorup row">
+			<div class="col-6">
+				<input type="submit" value="Crear"  class="btn btn-primary"/>
+			</div>
+			<div class="col-6">
+				<a class="btn btn-primary" th:href="@{/listar}">Atras</a>
+			</div>
+		</div>		
+		<!--  <input type="hidden" th:field="*{id}" /> --> 
+	</form>
+
+</body>
+</html>

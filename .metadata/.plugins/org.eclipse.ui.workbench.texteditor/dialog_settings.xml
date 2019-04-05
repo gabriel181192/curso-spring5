@@ -2,27 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="application.controllers.titulo" key="selection"/>
+		<item value="platform" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="application.controllers.titulo"/>
-			<item value="meta"/>
-			<item value="Boot"/>
-			<item value="boot"/>
-			<item value="provided"/>
-			<item value="com.springboot.app"/>
+			<item value="platform"/>
+			<item value="com.springboot.app.models.service."/>
+			<item value="IClienteService"/>
+			<item value="sys"/>
+			<item value="redirect"/>
+			<item value="listar"/>
+			<item value="return &quot;redirect:listar&quot;;"/>
+			<item value="return &quot;listar&quot;;"/>
+			<item value="model.addAttribute(&quot;clientes&quot;, clienteDao.findAll());"/>
+			<item value="model.addAttribute(&quot;titulo&quot;, &quot;Listado de Clientes&quot;);"/>
+			<item value="public String listar(Model model) {"/>
+			<item value="@RequestMapping(value=&quot;/&quot;, method=RequestMethod.GET)"/>
+			<item value="eliminar"/>
+			<item value="nombre"/>
+			<item value="cliente"/>
 		</list>
 		<list key="replacehistory">
+			<item value="&apos;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="392" key="DIALOG_HEIGHT"/>
-		<item value="506" key="DIALOG_X_ORIGIN"/>
-		<item value="259" key="DIALOG_Y_ORIGIN"/>
+		<item value="773" key="DIALOG_X_ORIGIN"/>
+		<item value="207" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

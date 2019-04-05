@@ -1,0 +1,7 @@
+insert into clientes (id,nombre,apellido,email,create_at) values (1,'Gabriel','Juarez','gabo@hotmail.com', '2019-04-04')
+insert into clientes (id,nombre,apellido,email,create_at) values (2,'Gabriel1','Juarez','gabo@hotmail.com1', '2019-04-04')
+insert into clientes (id,nombre,apellido,email,create_at) values (3,'Gabriel2','Juarez','gabo@hotmail.com2', '2019-04-04')
+insert into clientes (id,nombre,apellido,email,create_at) values (4,'Gabriel3','Juarez','gabo@hotmail.com3', '2019-04-04')
+insert into clientes (id,nombre,apellido,email,create_at) values (5,'Gabriel4','Juarez','gabo@hotmail.com4', '2019-04-04')
+insert into clientes (id,nombre,apellido,email,create_at) values (6,'Gabriel5','Juarez','gabo@hotmail.com5', '2019-04-04')
+insert into clientes (id,nombre,apellido,email,create_at) values (7,'Gabriel6','Juarez','gabo@hotmail.com6', '2019-04-04')
