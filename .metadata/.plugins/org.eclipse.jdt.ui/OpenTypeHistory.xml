@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=spring-boot-data-jpa/src\/main\/java&lt;com.springboot.app.models.dao{IClienteDao.java[IClienteDao" modifiers="513" timestamp="1554565071096"/>
-<typeInfo handle="=spring-boot-data-jpa/src\/main\/java&lt;com.springboot.app.models.dao{IClienteRepositoryDao.java[IClienteRepositoryDao" modifiers="513" timestamp="1554565071190"/>
+<typeInfo handle="=spring-boot-data-jpa/src\/main\/java&lt;com.springboot.app.models.dao{IClienteRepositoryDao.java[IClienteRepositoryDao" modifiers="513" timestamp="1554575285578"/>
 <typeInfo handle="=spring-boot-data-jpa/src\/main\/java&lt;com.springboot.app.models.dao{ClienteDaoImpl.java[ClienteDaoImpl" modifiers="1" timestamp="1554565071096"/>
-<typeInfo handle="=spring-boot-data-jpa/src\/main\/java&lt;com.springboot.app.controllers{ClienteController.java[ClienteController" modifiers="1" timestamp="1554565071096"/>
+<typeInfo handle="=spring-boot-data-jpa/src\/main\/java&lt;com.springboot.app.controllers{ClienteController.java[ClienteController" modifiers="1" timestamp="1554575751314"/>
 </typeInfoHistroy>
